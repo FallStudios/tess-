@@ -8,4 +8,9 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  build: {
+    target: 'esnext', // Modern JavaScript for better performance
+    outDir: 'dist', // Output folder for production build
+    sourcemap: true, // Generate source maps for debugging (optional)
+  },
 });
